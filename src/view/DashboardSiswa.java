@@ -37,7 +37,7 @@ public class DashboardSiswa extends javax.swing.JFrame {
         
     }
     public void tabelTrans() {
-        String[] judul = {"Tanggal","No. Transaksi","NISN","Nama Siswa","Bulan Dibayar","Tahun","Jumlah Bayar","Petugas"};
+        String[] judul = {"No. Transaksi","ID PETUGAS","NISN","TANGGAL","BULAN","TAHUN","ID SPP","JUMLAH"};
         model = new DefaultTableModel(judul,0);
         tabelTrans.setModel(model);
         String sql = "SELECT * FROM pembayaran WHERE nisn = '"+nisn+"' ";
@@ -100,14 +100,17 @@ public class DashboardSiswa extends javax.swing.JFrame {
         getContentPane().add(namasiswa, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 460, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("APLIKASI PEMBAYARAN SPP");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("SMK AL - IHSAN Batujajar");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 90, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("DATA TRANSAKSI");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
 
@@ -129,7 +132,9 @@ public class DashboardSiswa extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/bgCrud.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
+        mnAkun.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/logout.png"))); // NOI18N
         mnAkun.setText("Logout");
+        mnAkun.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         mnAkun.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mnAkunMouseClicked(evt);
@@ -140,6 +145,7 @@ public class DashboardSiswa extends javax.swing.JFrame {
         setJMenuBar(jMenuBar1);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void mnAkunMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mnAkunMouseClicked

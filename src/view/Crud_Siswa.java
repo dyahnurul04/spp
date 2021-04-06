@@ -167,6 +167,7 @@ public class Crud_Siswa extends javax.swing.JFrame {
         getContentPane().add(TNISN, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 190, 170, 40));
         getContentPane().add(TNIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 240, 170, 40));
 
+        idspp.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         idspp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "~ ID SPP" }));
         idspp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,6 +178,7 @@ public class Crud_Siswa extends javax.swing.JFrame {
         getContentPane().add(TNAMA, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 290, 170, 40));
         getContentPane().add(TALAMAT, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 390, 170, 40));
 
+        CBKELAS.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         CBKELAS.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "~ Pilih Kelas" }));
         CBKELAS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,6 +187,7 @@ public class Crud_Siswa extends javax.swing.JFrame {
         });
         getContentPane().add(CBKELAS, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 340, 170, 40));
 
+        BtnSimpan.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnSimpan.setText("Simpan");
         BtnSimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,6 +196,7 @@ public class Crud_Siswa extends javax.swing.JFrame {
         });
         getContentPane().add(BtnSimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 420, 80, 50));
 
+        BtnUpdate.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnUpdate.setText("Ubah");
         BtnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,6 +205,7 @@ public class Crud_Siswa extends javax.swing.JFrame {
         });
         getContentPane().add(BtnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 490, 80, 50));
 
+        BtnHapus.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnHapus.setText("Hapus");
         BtnHapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,6 +226,7 @@ public class Crud_Siswa extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
+        btnBack1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         btnBack1.setText("Kembali");
         btnBack1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,6 +234,7 @@ public class Crud_Siswa extends javax.swing.JFrame {
             }
         });
 
+        BtnRefresh1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnRefresh1.setText("Refresh Table");
         BtnRefresh1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -258,18 +265,21 @@ public class Crud_Siswa extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 600, 270, 50));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("CARI   :");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("KELOLA DATA SISWA");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/bgCrud.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, 700));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed

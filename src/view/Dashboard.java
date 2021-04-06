@@ -13,6 +13,12 @@ import java.util.Map;
 import javax.swing.table.DefaultTableModel;
 import config.KoneksiDB;
 import config.UserSession;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
@@ -57,7 +63,7 @@ public class Dashboard extends javax.swing.JFrame {
         
         //block akses
         mnDataMaster.setVisible(false);
-        mnLaporan.setVisible(false);
+        
     }
 
     /**
@@ -111,6 +117,7 @@ public class Dashboard extends javax.swing.JFrame {
         smTambah_trans = new javax.swing.JMenuItem();
         mnLaporan = new javax.swing.JMenu();
         smGenerate_laporan = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -145,16 +152,18 @@ public class Dashboard extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 290, 90));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("APLIKASI PEMBAYARAN SPP");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("SMK AL - IHSAN BATUJAJAR");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 255));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel7.setText("SISWA");
 
         jml_siswa.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -167,7 +176,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jml_siswa)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 188, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(21, 21, 21))
         );
@@ -185,7 +194,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(0, 102, 255));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel8.setText("PETUGAS");
 
         jml_petugas.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -198,7 +207,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jml_petugas)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 180, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addContainerGap())
         );
@@ -216,7 +225,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(0, 102, 255));
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel9.setText("KELAS");
 
         jml_kelas.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -229,7 +238,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jml_kelas)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
                 .addComponent(jLabel9)
                 .addGap(19, 19, 19))
         );
@@ -267,6 +276,7 @@ public class Dashboard extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Cari   : ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, -1));
 
@@ -301,6 +311,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         jMenuBar1.setPreferredSize(new java.awt.Dimension(300, 35));
 
+        mnAkun.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/iconnn.png"))); // NOI18N
         mnAkun.setText("Akun");
         mnAkun.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
 
@@ -394,17 +405,22 @@ public class Dashboard extends javax.swing.JFrame {
         });
         mnLaporan.add(smGenerate_laporan);
 
+        jMenuItem1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jMenuItem1.setText("Cetak Laporan");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        mnLaporan.add(jMenuItem1);
+
         jMenuBar1.add(mnLaporan);
 
         setJMenuBar(jMenuBar1);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void smInfo_akunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smInfo_akunActionPerformed
-        // TODO add your handling code here:
-        new InfoAkun().setVisible(true);
-    }//GEN-LAST:event_smInfo_akunActionPerformed
 
     private void smLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smLogoutActionPerformed
         new Login().setVisible(true);
@@ -443,6 +459,7 @@ public class Dashboard extends javax.swing.JFrame {
     private void smGenerate_laporanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smGenerate_laporanActionPerformed
         // TODO add your handling code here:
         new Report().setVisible(true);
+        ;
 
     }//GEN-LAST:event_smGenerate_laporanActionPerformed
 
@@ -453,6 +470,34 @@ public class Dashboard extends javax.swing.JFrame {
     private void cariKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cariKeyTyped
         tabelTrans();
     }//GEN-LAST:event_cariKeyTyped
+
+    private void smInfo_akunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smInfo_akunActionPerformed
+        // TODO add your handling code here:
+        new InfoAkun().setVisible(true);
+    }//GEN-LAST:event_smInfo_akunActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+         try {
+            KoneksiDB.getConnection();
+            try {
+                Map<String, Object> parameter = new HashMap<String, Object>();
+                
+                File rpt = new File("src/laporan/Lap_Trans.jrxml");
+                JasperDesign jasDesign = JRXmlLoader.load(rpt);
+                parameter.clear();
+                JasperReport jasReport = JasperCompileManager.compileReport(jasDesign);
+                JasperPrint jasPrint = net.sf.jasperreports.engine.JasperFillManager.fillReport(jasReport, 
+                        parameter, KoneksiDB.getConnection());
+                JasperViewer.viewReport(jasPrint, false);
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "Laporan tidak ditemukan" + e);
+            }
+            
+        } catch (Exception e) {
+            JOptionPane.showConfirmDialog(null, e);
+        }
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -582,6 +627,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

@@ -79,6 +79,7 @@ public class Crud_Spp extends javax.swing.JFrame {
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("KELOLA DATA SPP");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 50, -1, -1));
         getContentPane().add(tId_spp, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 270, 190, 30));
@@ -86,6 +87,7 @@ public class Crud_Spp extends javax.swing.JFrame {
         getContentPane().add(tNominal, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 470, 190, 30));
         getContentPane().add(cari, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 620, 30));
 
+        BtnSimpan.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnSimpan.setText("Simpan");
         BtnSimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +96,7 @@ public class Crud_Spp extends javax.swing.JFrame {
         });
         getContentPane().add(BtnSimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 420, 80, 50));
 
+        BtnHapus.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnHapus.setText("Hapus");
         BtnHapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,6 +107,7 @@ public class Crud_Spp extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         btnBack.setText("Kembali");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,6 +115,7 @@ public class Crud_Spp extends javax.swing.JFrame {
             }
         });
 
+        BtnRefresh.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnRefresh.setText("Refresh Table");
         BtnRefresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +146,7 @@ public class Crud_Spp extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 590, 270, 50));
 
+        BtnUpdate.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnUpdate.setText("Ubah");
         BtnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,6 +179,7 @@ public class Crud_Spp extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSimpanActionPerformed

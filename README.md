@@ -4,4 +4,4 @@
 # Pertama import file sql yang sudah disediakan
 # Pindahkan repository ke NetBeans Project
 # akun Admin username: admin password: admin
-# akun petugas username: petugas password: petugas
+# akun petugas username: petugas password: petugas# sppujikom

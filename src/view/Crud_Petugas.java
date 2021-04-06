@@ -105,6 +105,7 @@ Statement st;
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("KELOLA DATA PETUGAS");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 40, -1, -1));
         getContentPane().add(tId_petugas, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 230, 230, 30));
@@ -113,9 +114,11 @@ Statement st;
         getContentPane().add(tNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 460, 230, 30));
         getContentPane().add(cari, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 620, 30));
 
+        cbLevel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         cbLevel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "~pilih", "Admin", "Petugas", " " }));
         getContentPane().add(cbLevel, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 540, 160, 30));
 
+        BtnSimpan.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnSimpan.setText("Simpan");
         BtnSimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,6 +127,7 @@ Statement st;
         });
         getContentPane().add(BtnSimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 370, 80, 50));
 
+        BtnHapus.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnHapus.setText("Hapus");
         BtnHapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,6 +138,7 @@ Statement st;
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         btnBack.setText("Kembali");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +146,7 @@ Statement st;
             }
         });
 
+        BtnRefresh.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnRefresh.setText("Refresh Table");
         BtnRefresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,6 +177,7 @@ Statement st;
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 590, 260, 50));
 
+        BtnUpdate.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         BtnUpdate.setText("Ubah");
         BtnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -183,6 +190,7 @@ Statement st;
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSimpanActionPerformed
