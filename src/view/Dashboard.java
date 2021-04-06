@@ -145,10 +145,12 @@ public class Dashboard extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 290, 90));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("APLIKASI PEMBAYARAN SPP");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("SMK AL - IHSAN BATUJAJAR");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, -1, -1));
 
@@ -267,6 +269,7 @@ public class Dashboard extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Cari   : ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, -1));
 
@@ -301,6 +304,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         jMenuBar1.setPreferredSize(new java.awt.Dimension(300, 35));
 
+        mnAkun.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/iconnn.png"))); // NOI18N
         mnAkun.setText("Akun");
         mnAkun.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
 
@@ -399,12 +403,8 @@ public class Dashboard extends javax.swing.JFrame {
         setJMenuBar(jMenuBar1);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void smInfo_akunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smInfo_akunActionPerformed
-        // TODO add your handling code here:
-        new InfoAkun().setVisible(true);
-    }//GEN-LAST:event_smInfo_akunActionPerformed
 
     private void smLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smLogoutActionPerformed
         new Login().setVisible(true);
@@ -453,6 +453,11 @@ public class Dashboard extends javax.swing.JFrame {
     private void cariKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cariKeyTyped
         tabelTrans();
     }//GEN-LAST:event_cariKeyTyped
+
+    private void smInfo_akunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smInfo_akunActionPerformed
+        // TODO add your handling code here:
+        new InfoAkun().setVisible(true);
+    }//GEN-LAST:event_smInfo_akunActionPerformed
 
     /**
      * @param args the command line arguments

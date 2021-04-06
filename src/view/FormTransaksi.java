@@ -68,6 +68,7 @@ String id = UserSession.get_id();
         jLabel12 = new javax.swing.JLabel();
         tPetugas = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         tTanggal = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         cbBulan = new javax.swing.JComboBox<>();
@@ -92,94 +93,99 @@ String id = UserSession.get_id();
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel22.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("TRANSAKSI PEMBAYARAN");
-        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, -1, -1));
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel3.setText("No.Transaksi :");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, -1, -1));
 
-        tNo_Transaki.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        tNo_Transaki.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         tNo_Transaki.setText("Trns000");
-        getContentPane().add(tNo_Transaki, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 190, 140, -1));
+        getContentPane().add(tNo_Transaki, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 120, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setText("NISN              :");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, -1, -1));
 
-        tNisn.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        tNisn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         tNisn.setText("~");
         tNisn.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
                 tNisnPropertyChange(evt);
             }
         });
-        getContentPane().add(tNisn, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 140, -1));
+        getContentPane().add(tNisn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 110, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel5.setText("Nama Siswa  :");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, -1, -1));
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setText("Nama Siswa   :");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, -1, -1));
 
-        tNama_siswa.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        tNama_siswa.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         tNama_siswa.setText("~");
-        getContentPane().add(tNama_siswa, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 140, -1));
+        getContentPane().add(tNama_siswa, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 110, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel6.setText("Kelas              :");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, -1, -1));
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel6.setText("Kelas             :");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, -1, -1));
 
-        tKelas.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        tKelas.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         tKelas.setText("~");
-        getContentPane().add(tKelas, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 140, -1));
+        getContentPane().add(tKelas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 110, -1));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel7.setText("Angkatan      :");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, -1, -1));
         getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 700));
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel11.setText("~");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, 40, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 40, -1));
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel13.setText("/");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, 20, -1));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 20, -1));
 
-        tAngkatan.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        tAngkatan.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         tAngkatan.setText("~");
-        getContentPane().add(tAngkatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 320, 100, -1));
+        getContentPane().add(tAngkatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 340, 60, -1));
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel8.setText("Petugas         :");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, -1, -1));
 
-        tId_petugas.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        tId_petugas.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         tId_petugas.setText("~");
-        getContentPane().add(tId_petugas, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 40, 10));
+        getContentPane().add(tId_petugas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, 40, 10));
 
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel12.setText("/");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, 20, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 380, 20, -1));
 
-        tPetugas.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        tPetugas.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         tPetugas.setText("~");
-        getContentPane().add(tPetugas, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 100, -1));
+        getContentPane().add(tPetugas, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, 50, -1));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel9.setText("Tanggal");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 480, -1, -1));
-        getContentPane().add(tTanggal, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 470, 140, 30));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 490, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel14.setText("DATA SISWA");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, -1, -1));
+        getContentPane().add(tTanggal, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 480, 140, 30));
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel10.setText("Bulan");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 530, -1, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 530, -1, -1));
 
         cbBulan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "januari", "februari", "maret", "april", "mei", "juni", "juli", "agustus", "september", "oktober", "november", "desember" }));
         getContentPane().add(cbBulan, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 520, 140, 30));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel2.setText("Jumlah");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 570, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 570, -1, -1));
         getContentPane().add(tJumlah_bayar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, 140, 30));
 
         btnSimpan.setText("Bayar");
@@ -188,7 +194,7 @@ String id = UserSession.get_id();
                 btnSimpanActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 610, 90, 30));
+        getContentPane().add(btnSimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 550, 90, 30));
 
         btnHapus.setText("Batalkan");
         btnHapus.addActionListener(new java.awt.event.ActionListener() {
@@ -196,9 +202,10 @@ String id = UserSession.get_id();
                 btnHapusActionPerformed(evt);
             }
         });
-        getContentPane().add(btnHapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 610, 90, 30));
+        getContentPane().add(btnHapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 500, 90, 30));
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Cari Siswa");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 150, -1, -1));
 
@@ -210,7 +217,7 @@ String id = UserSession.get_id();
                 cariKeyTyped(evt);
             }
         });
-        getContentPane().add(cari, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 150, 420, 30));
+        getContentPane().add(cari, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 150, 450, 30));
 
         TabelSiswa.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -230,16 +237,18 @@ String id = UserSession.get_id();
         });
         jScrollPane1.setViewportView(TabelSiswa);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 190, 540, 200));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 190, 640, 200));
 
         jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Status Bayar");
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 410, -1, -1));
         getContentPane().add(bg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 700));
 
         tNama_siswa1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        tNama_siswa1.setForeground(new java.awt.Color(255, 255, 255));
         tNama_siswa1.setText("~");
-        getContentPane().add(tNama_siswa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 400, 420, -1));
+        getContentPane().add(tNama_siswa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 410, 420, -1));
 
         tabelStatusBayar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -259,7 +268,7 @@ String id = UserSession.get_id();
         });
         jScrollPane2.setViewportView(tabelStatusBayar);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 440, 540, 160));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 440, 630, 160));
 
         jButton3.setText("Reset Form");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -267,7 +276,7 @@ String id = UserSession.get_id();
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 600, 140, 30));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 610, 140, 30));
 
         jButton4.setText("Kembali");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -275,12 +284,13 @@ String id = UserSession.get_id();
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 610, 120, 30));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 610, 120, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/transaksi.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, 690));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void tNisnPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_tNisnPropertyChange
@@ -469,6 +479,7 @@ String id = UserSession.get_id();
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;

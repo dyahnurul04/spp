@@ -69,7 +69,7 @@ Statement st;
         getContentPane().add(cbJurusan, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 470, 160, 40));
         getContentPane().add(tNamaKelas, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 360, 190, 30));
         getContentPane().add(tId_kelas, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 250, 190, 30));
-        getContentPane().add(cari, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 620, 30));
+        getContentPane().add(cari, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 620, 30));
 
         tblKelas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -89,7 +89,7 @@ Statement st;
         });
         jScrollPane1.setViewportView(tblKelas);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 730, 400));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 730, 400));
 
         BtnSimpan.setText("Simpan");
         BtnSimpan.addActionListener(new java.awt.event.ActionListener() {
@@ -97,7 +97,7 @@ Statement st;
                 BtnSimpanActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnSimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 540, 80, 40));
+        getContentPane().add(BtnSimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 420, 80, 40));
 
         BtnUpdate.setText("Ubah");
         BtnUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -105,7 +105,7 @@ Statement st;
                 BtnUpdateActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 540, 80, 40));
+        getContentPane().add(BtnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 480, 80, 40));
 
         BtnHapus.setText("Hapus");
         BtnHapus.addActionListener(new java.awt.event.ActionListener() {
@@ -113,9 +113,10 @@ Statement st;
                 BtnHapusActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnHapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 540, 80, 40));
+        getContentPane().add(BtnHapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 540, 80, 40));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("KELOLA DATA KELAS");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, -1, -1));
 
@@ -135,7 +136,7 @@ Statement st;
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("CARI  : ");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -177,9 +178,10 @@ Statement st;
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 590, 270, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/bgCrud.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1320, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void cbJurusanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbJurusanActionPerformed

@@ -209,7 +209,7 @@ public class Report extends javax.swing.JFrame {
         jLabel102.setText("Cetak");
         jPanel48.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
-        getContentPane().add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 620, 140, 40));
+        getContentPane().add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 610, 140, 40));
 
         teks_area.setEditable(false);
         teks_area.setColumns(20);
@@ -222,10 +222,10 @@ public class Report extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel2.setText("LAPORAN PEMBAYARAN");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, -1, -1));
 
         bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/transaksi.jpg"))); // NOI18N
-        getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1000, 700));
+        getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1000, 680));
 
         pack();
         setLocationRelativeTo(null);
